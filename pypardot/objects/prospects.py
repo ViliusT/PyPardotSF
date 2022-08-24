@@ -222,7 +222,7 @@ class Prospects(object):
         response = self.client.get(object_name=object_name, path=path, params=params)
         return response
 
-    def _post(self, object_name='prospect', path=None, params=None):
+    def _post(self, object_name='prospect', path=None, params=None, data=None):
         """POST requests for the Prospect object."""
         if params is None:
             params = {}
